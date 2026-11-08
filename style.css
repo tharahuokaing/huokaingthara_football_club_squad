@@ -1,0 +1,264 @@
+/* Styling for Squad Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Khmer OS Battambang, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header & Nav */
+header {
+    background: #090d16;
+    color: #fff;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #00f2fe;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.4rem;
+    color: #00f2fe;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #00f2fe;
+}
+
+.lang-switch button {
+    background: #00f2fe;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #090d16;
+    transition: transform 0.2s;
+}
+
+.lang-switch button:hover {
+    transform: scale(1.05);
+}
+
+/* Page Title Banner */
+.page-title {
+    background: linear-gradient(135deg, #090d16 0%, #1e293b 100%);
+    text-align: center;
+    padding: 4rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-title h2 {
+    font-size: 2.2rem;
+    color: #00f2fe;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #94a3b8;
+}
+
+/* Sections */
+.section {
+    padding: 3.5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    color: #00f2fe;
+}
+
+/* Staff Grid */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.staff-card {
+    background: #1e293b;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.staff-card.highlighted {
+    border: 2px solid #00f2fe;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+}
+
+.staff-avatar {
+    width: 85px;
+    height: 85px;
+    background: #0f172a;
+    color: #00f2fe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin: 0 auto 1.2rem auto;
+    border: 2px solid #00f2fe;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(0, 242, 254, 0.15);
+    color: #00f2fe;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.staff-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* Squad Section */
+.squad-section {
+    background: #090d16;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.squad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.player-card {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 242, 254, 0.4);
+}
+
+.player-number {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 242, 254, 0.1);
+    color: #00f2fe;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.player-icon {
+    width: 70px;
+    height: 70px;
+    background: #0f172a;
+    color: #00f2fe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 1rem auto;
+}
+
+.player-card h3 {
+    color: #f8fafc;
+    margin-bottom: 5px;
+}
+
+.player-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.recruitment-slot {
+    border: 2px dashed #334155;
+    background: rgba(30, 41, 59, 0.5);
+}
+
+.recruitment-slot .player-icon {
+    color: #94a3b8;
+}
+
+/* Footer */
+footer {
+    background: #05080f;
+    color: #94a3b8;
+    padding: 3rem 0 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-content a {
+    color: #00f2fe;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: #e2e8f0;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00f2fe;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
